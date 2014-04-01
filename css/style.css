@@ -35,13 +35,6 @@ html, body {
 	 transform: translateY(5px);
 }
 
-#down-nav {
-/*	position: relative;
-	margin-top: -20%;  negative value of footer height 
-	height: 20%;
-	clear:both;*/
-}
-
 /* Content */
 #wrapper {
 	min-height: 100%;
