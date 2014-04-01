@@ -1,4 +1,5 @@
 * {margin:0;padding:0;} 
+
 html, body {
 	height: 100%;
 }
@@ -35,10 +36,10 @@ html, body {
 }
 
 #down-nav {
-	position: relative;
-	margin-top: -20%; /* negative value of footer height */
+/*	position: relative;
+	margin-top: -20%;  negative value of footer height 
 	height: 20%;
-	clear:both;
+	clear:both;*/
 }
 
 /* Content */
@@ -50,7 +51,6 @@ html, body {
 
 #content-wrapper {
 	overflow:auto;
-	padding-bottom: 20%;
 	width: 100%;
 }
 
@@ -94,5 +94,13 @@ html, body {
 /* Clear */
 .clear {
 	clear:both;
+}
+
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
 }
 
