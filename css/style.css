@@ -1,3 +1,9 @@
+* {margin:0;padding:0;} 
+html, body {
+	height: 100%;
+}
+
+
 /* Pointer */
 .nav {
 	margin-left: 47%;
@@ -28,13 +34,23 @@
 	 transform: translateY(5px);
 }
 
+#down-nav {
+	position: relative;
+	margin-top: -20%; /* negative value of footer height */
+	height: 20%;
+	clear:both;
+}
+
 /* Content */
 #wrapper {
+	min-height: 100%;
 	width:100%;
 	position: relative;
 }
 
 #content-wrapper {
+	overflow:auto;
+	padding-bottom: 20%;
 	width: 100%;
 }
 
@@ -63,12 +79,13 @@
 
 .content-right img {
 	padding-top: 2%;
-	padding-left: 25%;
+	padding-left: 23%;
 	width: 55%;
 }
 .content-right p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.25em;
+	padding-top: 2%;
 	padding-left: 17%;
 	width: 70%;
 	text-align: center;
