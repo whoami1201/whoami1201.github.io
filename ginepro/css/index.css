@@ -12,28 +12,10 @@ body {
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
+.active {
+  color:#555;
+  background-color: #e7e7e7;
 }
-
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-
-
 .navbar-brand {
   width: 75%;
 }
@@ -123,30 +105,17 @@ body {
     padding-right: 0;
     padding-left: 0;
   }
-
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left:  15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left:  0;
-  }
   .navbar-brand {
     width: auto;
   }
 
   .navbar-brand img {
-  width: 70%;
+    width: 70%;
   }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
+  .active {
+    color:#555;
+    border-bottom: 2px solid rgb(143, 172, 146);
+    background-color: rgba(255,255,255,0);
   }
 
   /* Bump up size of carousel content */

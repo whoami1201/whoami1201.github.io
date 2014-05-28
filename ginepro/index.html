@@ -16,38 +16,32 @@
 	</head>
 	<body>
 		<!-- Navigation bar -->
-
-		<div class="navbar-wrapper">
+		<div class="navbar navbar-default navbar-static-top">
 			<div class="container">
-				<div class="navbar navbar-default navbar-static-top">
-					<div class="container">
-						<a href="#" class="navbar-brand"><img src="img/logo_2.png" alt="Home" id="home-logo"></a>
-						<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<div class="collapse navbar-collapse navHeaderCollapse">
-							<ul class="nav navbar-nav navbar-left">
-								<li class="active"><a href="#">Home</a></li>
-								<li><a href="#">About</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Teippaukset</a></li>
-										<li><a href="#">Tulosteet</a></li>
-										<li><a href="#">Opasteet</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Contact</a></li>
+				<a href="#" class="navbar-brand"><img src="img/logo_2.png" alt="Home"></a>
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Teippaukset</a></li>
+								<li><a href="#">Tulosteet</a></li>
+								<li><a href="#">Opasteet</a></li>
 							</ul>
-						</div>
-						
-					</div>
+						</li>
+						<li><a href="#">Contact</a></li>
+					</ul>
 				</div>
+				
 			</div>
 		</div>
-		
 		<!-- Carousel
 		================================================== -->
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -155,11 +149,6 @@
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($){
-				var _element = $(".nav li")
-				$(_element).click(function(){
-					_element.removeClass("active");
-					$(this).addClass("active");
-				});
 				$(".fancybox").fancybox({
 					prevEffect    : 'fade',
 					nextEffect    : 'fade',

@@ -1,0 +1,30 @@
+.full-width-image {
+	background: url('../img/green-about.jpg') no-repeat center center;
+	background-size: cover;
+	height: 165px;
+}
+
+.section-heading {
+	font-size: 4em;
+	margin: 55px 0;
+}
+
+.section-lead {
+	font-size: 2em;
+	margin:15px 0;
+}
+.section-paragraph {
+	margin: 30px 0;
+}
+
+@media (min-width: 768px) {
+	.full-width-image {
+		height: 300px;
+	}
+}
+
+@media (min-width: 992px) {
+  .full-width-image {
+  	height: 350px;
+  }
+}
