@@ -8,6 +8,10 @@ body {
   color: #5a5a5a;
 }
 
+/* Helpers */
+.center {
+  text-align: center;
+}
 
 
 /* CUSTOMIZE THE NAVBAR
